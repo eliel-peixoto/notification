@@ -52,7 +52,7 @@ const LoginScreen = ({ navigation }) => {
     };
     
     const handleRegister = () => {
-        navigation.navigate('Cadastro'); 
+        navigation.navigate('Usuário'); 
     };
 
     return (

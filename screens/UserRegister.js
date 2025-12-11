@@ -2,8 +2,8 @@
 import { StatusBar } from 'expo-status-bar';
 import React, { useState } from 'react';
 import { StyleSheet, Text, View, TextInput, Button, Alert } from 'react-native';
-import { supabase } from './src/supabase'; // <--- 1. Importar Supabase
-import { registerForPushNotificationsAsync } from './src/notificationService'; // <--- 2. Importar o Token
+import { supabase } from '../supabase'; // <--- 1. Importar Supabase
+import { registerForPushNotificationsAsync } from '../notificationService'; // <--- 2. Importar o Token
 
 
 const UserRegister = ({navigation}) => {
