@@ -3,7 +3,7 @@ import { StyleSheet, Text, TextInput, View, Button, Alert } from 'react-native';
 import { supabase } from '../supabase'; 
 import { registerForPushNotificationsAsync } from '../notificationService'; 
 
-const LoginScreen = ({ navigation }) => {
+const Login = ({ navigation }) => {
 
     const [email, setEmail] = useState('');
     const [senha, setSenha] = useState('');
@@ -52,7 +52,7 @@ const LoginScreen = ({ navigation }) => {
     };
     
     const handleRegister = () => {
-        navigation.navigate('Usuário'); 
+       navigation.navigate('Usuário'); 
     };
 
     return (
@@ -80,7 +80,7 @@ const LoginScreen = ({ navigation }) => {
             
             <Button 
                 title={loading ? 'Entrando...' : 'Login'} 
-                onPress={handleLogin}
+                //onPress={handleLogin}
                 disabled={loading}
             />
             
@@ -88,7 +88,7 @@ const LoginScreen = ({ navigation }) => {
             
             <Button 
                 title={'Cadastre-se'} 
-                onPress={handleRegister}
+                //onPress={handleRegister}
                 disabled={loading}
             />
         </View>
@@ -121,4 +121,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default LoginScreen;
+export default Login;

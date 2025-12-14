@@ -2,6 +2,12 @@
   "expo": {
     "name": "notification",
     "slug": "notification",
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "extra": {
+      "eas": {
+        "projectId": "1d4385e5-44ef-4ccd-9d22-87281a3dded4"
+      }
+    },
+    "owner": "ninjatop"
   }
 }
